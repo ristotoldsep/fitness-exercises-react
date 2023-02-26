@@ -1,5 +1,5 @@
 body {
-    font-family: 'montserrat';
+    font-family: 'montserrat', sans-serif;
     background-color: #FFFAFB;
 }
 
@@ -7,11 +7,16 @@ body {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-
+    font-family: 'montserrat', sans-serif !important;
 }
 
 ::-webkit-scrollbar {
     width: 0px;
+}
+
+.testtt {
+    margin-left: 40px;
+    white-space: nowrap;
 }
 
 .right-arrow,
@@ -105,6 +110,24 @@ body {
     height: 381px;
     text-decoration: none;
 }
+
+/*
+Preloader
+**/
+
+
+.App {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.App.loaded {
+    opacity: 1;
+}
+
+
+/*------------------------*/
+
 
 @media screen and (max-width:1200px) {
     .detail-image {
