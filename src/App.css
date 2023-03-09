@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
 body {
-    font-family: 'montserrat', sans-serif;
+    font-family: 'Manrope', sans-serif;
     background-color: #FFFAFB;
 }
 
@@ -7,7 +9,7 @@ body {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'montserrat', sans-serif !important;
+    font-family: 'Manrope', sans-serif !important;
 }
 
 ::-webkit-scrollbar {
