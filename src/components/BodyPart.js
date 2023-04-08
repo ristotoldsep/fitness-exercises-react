@@ -4,7 +4,7 @@ import React from 'react'
 import Icon from '../assets/icons/gym.png'
 
 
-const BodyPart = ({ item, setBodyPart, bodyPart }) => {
+const BodyPart = ({ item, setBodyPart, bodyPart, setSearchTerm }) => {
   return (
     <Stack
         type="button"
@@ -22,6 +22,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
           } 
         }
         onClick={() => {
+          setSearchTerm('');
           setBodyPart(item);
           window.scrollTo({top: 1800, left: 100, behavior: 'smooth'})
         }}
