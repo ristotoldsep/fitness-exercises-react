@@ -36,6 +36,9 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart, search, setSearc
       setSearch('');
       setExercises(searchedExercises);
 
+      window.scrollTo({top: 1650, behavior: 'smooth'})
+      
+
       // console.log(exercises);
     }
   }
@@ -86,7 +89,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart, search, setSearc
         </Button>
       </Box>
       <Box sx={{ position: 'relative', width: '100%', p: '20px'}}>
-          <HorizontalScrollbar data={bodyParts} bodyPart={bodyPart} setBodyPart={setBodyPart} setSearchTerm={setSearchTerm} />
+          <HorizontalScrollbar data={bodyParts} bodyPart={bodyPart} setBodyPart={setBodyPart} setSearchTerm={setSearchTerm} isBodyParts />
       </Box>
     </Stack>
   );

@@ -24,7 +24,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart, setSearchTerm }) => {
         onClick={() => {
           setSearchTerm('');
           setBodyPart(item);
-          window.scrollTo({top: 1800, left: 100, behavior: 'smooth'})
+          window.scrollTo({top: 1600, behavior: 'smooth'})
         }}
     >
         <img src={Icon} alt="dumbbell" style={{width: '40px', height: '40px'}} />
